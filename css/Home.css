@@ -1,0 +1,117 @@
+button {
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.main {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    width: 100%;
+}
+
+.nav ul {
+    display: flex;
+    border-radius: 40px; /* Adjusted from 30px */
+    position: relative;
+}
+
+.nav ul:before {
+    border-radius: 40px; /* Adjusted from 30px */
+    bottom: 2px;
+    content: '';
+    left: 2px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav ul li .tab_button {
+    background: none;
+    border-radius: 15px; /* Adjusted from 10px */
+    cursor: pointer;
+    height: 50px; /* Adjusted from 50px */
+    position: relative;
+    width: 70px; /* Adjusted from 50px */
+    z-index: 1;
+}
+
+.nav ul li .tab_button .icon {
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.nav ul li .active_tab_button .icon:before {
+    opacity: 1;
+    top: -35px; /* Adjusted from -30px */
+    visibility: visible;
+}
+
+.nav ul li .tab_button .icon i{
+    color: #7e7e7e;
+    display: block;
+    font-size: 18px; /* Adjusted from 12px */
+    position: relative;
+	height: 30px;
+    transition: .5s;
+    z-index: 1;
+}
+.nav ul li .tab_button .home i{
+    background: url(../img/tabber/home.png) center center no-repeat;
+}
+.nav ul li .tab_button .Explore i{
+    background: url(../img/tabber/Explore.png) center center no-repeat;
+}
+.nav ul li .tab_button .Rights i{
+    background: url(../img/tabber/Rights.png) center center no-repeat;
+}
+.nav ul li .tab_button .Shopping i{
+    background: url(../img/tabber/Shopping.png) center center no-repeat;
+}
+.nav ul li .tab_button .me i{
+    background: url(../img/tabber/me.png) center center no-repeat;
+}
+.nav ul li .active_tab_button .icon i {
+    color: #101010;
+    transform: translateY(-12px); /* Adjusted from -21px */
+    top: 3.5px;
+}
+.nav ul li .active_tab_button .home i{
+    background: url(../img/tabber/home_a.png) center center no-repeat;
+}
+.nav ul li .active_tab_button .Explore i{
+    background: url(../img/tabber/Explore_a.png) center center no-repeat;
+}
+.nav ul li .active_tab_button .Rights i{
+    background: url(../img/tabber/Rights_a.png) center center no-repeat;
+}
+.nav ul li .active_tab_button .Shopping i{
+    background: url(../img/tabber/Shopping_a.png) center center no-repeat;
+}
+.nav ul li .active_tab_button .me i{
+    background: url(../img/tabber/me_a.png) center center no-repeat;
+}
+.nav ul li .tab_button .name {
+    color: #7e7e7e;
+    display: block;
+    font-size: 12px; /* Adjusted font size */
+    position: relative;
+    z-index: 1;
+}
+
+.nav ul li .active_tab_button .name {
+    color: #4579F6;
+}
+
+.tab_button:focus .icon i svg path,
+.tab_button:active .icon i svg path {
+    fill: #101010;
+}
