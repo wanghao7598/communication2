@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Recharge and pay</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="two-box">
+			<div class="header">
+				<img src="./img/titlefh.png">
+				Recharge and pay
+			</div>
+			<div class="describe">Recharge</div>
+			<div class="input-number">  <input type="number" id="numberInput" value="1121614027000" placeholder="phone number"/><img src="img/close-number.png" class="close-number"  alt="Close" ></div>
+			<div class="Pricelist">
+				<ul>
+					<li class="active">
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+					<li>
+						<div class="dollar">10$</div>
+						<div class="Price">Price: 9.9$</div>
+					</li>
+				</ul>
+			</div>
+			<button class="Submit">Recharge</button>
+			<button class="Register">Order History</button>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+			$('.close-number').click(function() {
+				$('#numberInput').val(''); // 清空输入框的值
+			});
+			  $('.Pricelist ul li').click(function() {
+			        // 移除所有列表项的 active 类
+				$('.Pricelist ul li').removeClass('active');
+				
+				// 为当前点击的列表项添加 active 类
+				$(this).addClass('active');
+				
+				// 可选的：添加淡入淡出动画效果（这里其实不需要，因为我们已经用了 CSS transition）
+				// 但如果你想在切换时做一些额外的动画，可以在这里添加代码
+				// 例如：$(this).fadeIn(300); （注意：fadeIn 通常用于隐藏后显示，这里可能不适用）
+				
+				// 不过，由于我们已经使用了 CSS transition，上面的 fadeIn 是不必要的。
+				// 如果你想在点击时有更明显的视觉反馈，可以考虑使用其他动画，比如改变字体大小后再还原。
+			});
+		});
+	</script>
+</html>

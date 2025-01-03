@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Personal Information</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="two-box">
+			<div class="header">
+				<img src="./img/titlefh.png">
+				Personal Information
+			</div>
+			<div class="Information">
+				<div class="top">
+					<div class="tx"><img src="img/tx.png"></div>
+					<div class="content">
+						<div class="phone">188****0000</div>
+						<div class="dz">Beijing</div>
+					</div>
+					<div class="Edit">Edit profile picture <img src="img/rightfh.png"></div>
+				</div>
+				<div class="Infocard">
+					<ul>
+						<li>full name<span>kang*</span></li>
+						<li>Real name authentication<span>registered</span></li>
+						<li>Network access time<span>2015-06-17<img src="img/Lefthui.png"></span></li>
+						<li>Internet Age<span>9 years and 3 months</span></li>
+						<li>Credit score<span>601</span></li>
+						<li>contact information<span>188****0000</span></li>
+					</ul>
+				</div>
+				<div class="Infocard">
+					<ul>
+						<li>Address<span><img src="img/Lefthui.png"></span></li>
+						<li>management of invoices<span><img src="img/Lefthui.png"></span></li>
+					</ul>
+				</div>
+				<div class="Infocard">
+					<ul>
+						<li>Star rating<span>Samsung users</span></li>
+						<li>Star rating validity period<span>2025-01-30</span></li>
+						<li>Points Details<span><img src="img/Lefthui.png"></span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+		    $('#date-list li').click(function() {
+		        // 移除所有项的 active 类
+		        $('#date-list li').removeClass('active');
+		
+		        // 添加 active 类到被点击的项
+		        $(this).addClass('active');
+		    });
+		});
+	</script>
+</html>

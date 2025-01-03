@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Invoice header management</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="css/radio.css">
+	</head>
+	<body>
+		<div class="two-box">
+			<div class="header">
+				<img src="./img/titlefh.png">
+				Invoice header management
+			</div>
+			<div class="management">
+				<div class="name">that person<span>kang*</span></div>
+				<div class="default">
+					<div class="radiobox">
+						<label class="radio">
+						    <input type="radio" name="r" value="1" checked="">
+						    <svg viewBox="0 0 24 24" filter="url(#goo-light)">
+						        <circle class="top" cx="12" cy="-12" r="8"></circle>
+						        <circle class="dot" cx="12" cy="12" r="5"></circle>
+						        <circle class="drop" cx="12" cy="12" r="2"></circle>
+						    </svg>
+						</label>
+						set as default
+					</div>
+				</div>
+				<div class="Enterprise">
+					<div class="title">Enterprise unit</div>
+					<div class="text">Invoice header: Beijing xxxx</div>
+					<div class=text>Taxpayer Identification Number: 1234567</div>
+					<div class="modify">
+						<img src="./img/img2/Edit-two.png">
+						<p>delete</p>
+					</div>
+					<div class="text2">
+						<label class="radio">
+						    <input type="radio" name="r" value="1" checked="">
+						    <svg viewBox="0 0 24 24" filter="url(#goo-light)">
+						        <circle class="top" cx="12" cy="-12" r="8"></circle>
+						        <circle class="dot" cx="12" cy="12" r="5"></circle>
+						        <circle class="drop" cx="12" cy="12" r="2"></circle>
+						    </svg>
+						</label>
+						set as default
+						<img src="./img/img2/Delete-five.png" class="del">
+					</div>
+				</div>
+				<div class="content">
+					<p>Reminder: </p>
+					The invoice header added in the China Mobile app only supports use within the China Mobile app; Can the managed invoice header information be used when issuing invoices? The specific details depend on the actual issuance business.
+				</div>
+				<button class="Submit">Add invoice header</button>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+<script src="./js/gsap.min.js"></script>
+<script src="./js/radio.js"></script>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Shopping Cart</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="two-box">
+			<div class="header">
+				<img src="./img/titlefh.png">
+				Shopping Cart
+			</div>
+			<div class="Shoppinglist">
+				<div class="card">
+					<div class="left">
+						<img src="img/GalaxyZFlip6.png">
+						Huawei P50
+					</div>
+					<div class="money">$652</div>
+				</div>
+				<div class="card">
+					<div class="left">
+						<img src="img/GalaxyZFlip62.png">
+						Galaxy Z Flip6
+					</div>
+					<div class="money">$252</div>
+				</div>
+				<div class="card">
+					<div class="left">
+						<img src="img/Rectangle176.png">
+						BlackBerry Z 698
+					</div>
+					<div class="money">$367</div>
+				</div>
+				<div class="Apply">
+					<div class="sum">$0.00</div>
+					<div class="Applybtn">Apply</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<script>
+		 // 等待DOM加载完成
+		window.onload = function() {
+			// 获取所有money元素
+			var moneyElements = document.querySelectorAll('.money');
+			var total = 0;
+ 
+			// 遍历money元素，计算总和
+			moneyElements.forEach(function(element) {
+				// 移除$符号，并将字符串转换为数字
+				var price = parseFloat(element.textContent.replace('$', ''));
+				if (!isNaN(price)) {
+					total += price;
+				}
+			});
+			// 更新Apply元素的内容
+			var applyElement = document.querySelector('.sum');
+			applyElement.textContent = '$' + total.toFixed(2); // 保留两位小数
+		};
+	</script>
+</html>

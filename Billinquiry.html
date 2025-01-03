@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Bill inquiry</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="two-box">
+			<div class="header">
+				<img src="./img/titlefh.png">
+				Bill inquiry
+			</div>
+			<div class="username">1121614027000</div>
+			<div class="describe" style="padding: 0px 20px; 20px">Recharge</div>
+			<div class="calendarbox">
+				<div class="month">
+					<ul  id="date-list">
+						<li class="active">
+							<p>August</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<p>August</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<p>August</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<p>August</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<p>August</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<p>August</p>
+							<p>2024</p>
+						</li>
+						<li>
+							<p>August</p>
+							<p>2024</p>
+						</li>
+					</ul>
+					<div class="ico"><img src="./img/monthico.png"></div>
+				</div>
+				<div class="consumptionbox">
+					<div class="text">Monthly consumption<span>78.10</span></div>
+					<div class="info">Actual payable($)</div>
+					<div class="nubmer">70.10</div>
+					<div class="Guide">Billing Guide<img src="./img/Lefthui.png"></div>
+				</div>
+				<div class="Detailsbox">
+					<div class="title">Bill Details<div class="Guide">Billing Guide<img src="./img/Lefthui.png"></div></div>
+					<div class="July">July 1st, 2024 - July 31st, 2024<span>Unit: $</span></div>
+					<div class="Consumerlist">
+						<table border="0" width="100%">
+							<tr>
+								<th>Consumer Items</th>
+								<th>Original price</th>
+								<th>Actual consumption</th>
+							</tr>
+							<tr>
+								<td>Fixed consumption</td>
+								<td>78.00</td>
+								<td>78.00</td>
+							</tr>
+							<tr>
+								<td>Fixed consumption</td>
+								<td>78.00</td>
+								<td>78.00</td>
+							</tr>
+							<tr>
+								<td>Fixed consumption</td>
+								<td>78.00</td>
+								<td>78.00</td>
+							</tr>
+							<tr>
+								<td>Fixed consumption</td>
+								<td>78.00</td>
+								<td>78.00</td>
+							</tr>
+							<tr>
+								<td>Fixed consumption</td>
+								<td>78.00</td>
+								<td>78.00</td>
+							</tr>
+						</table>
+					</div>
+					<div class="Download">
+						<div class="">Bill Download</div>
+						<div class="" style="color: #4579F6;">Detailed list query</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<script>
+		$(document).ready(function() {
+		    $('#date-list li').click(function() {
+		        // 移除所有项的 active 类
+		        $('#date-list li').removeClass('active');
+		
+		        // 添加 active 类到被点击的项
+		        $(this).addClass('active');
+		    });
+		});
+	</script>
+</html>

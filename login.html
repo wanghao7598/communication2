@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>login</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="login-box">
+			<div class="title"><img src="img/img2/close-x.png">Log on</div>
+			<div class="contnet">
+				<div class="item">
+					<div class="lable">Account</div>
+					<div class="input"><input type="text" placeholder=""></div>
+				</div>
+				<div class="item">
+					<div class="lable">Password</div>
+					<div class="input"><input type="password" placeholder=""></div>
+				</div>
+				<div class="item">
+					<div class="lable">Code</div>
+					<div class="input"><input tpye="text" placeholder=""><button>YHDF</button></div>
+				</div>
+			</div>
+			<button class="Submit">Log on</button>
+			<button class="Register">Register</button>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	 <script type="text/javascript">
+	        $(document).ready(function() {
+	            $('.Submit').click(function(event) {
+	                var isValid = true; // 假设表单是有效的
+	 
+	                // 遍历所有input元素并检查它们的值
+	                $('.login-box input[type="text"], .login-box input[type="password"]').each(function() {
+	                    if ($(this).val().trim() === '') { // 使用trim()去除前后的空格
+	                        isValid = false; // 如果发现空字段，则表单无效
+	                        $(this).css('border-color', 'red'); // 可选：将边框颜色更改为红色以指示错误
+	                    } else {
+	                        $(this).css('border-color', ''); // 如果字段不为空，则重置边框颜色
+	                    }
+	                });
+	 
+	                // 如果表单无效，则阻止提交并显示错误消息
+	                if (!isValid) {
+	                    event.preventDefault(); // 阻止表单提交
+	                    alert('Please fill in all fields.'); // 显示错误消息
+	                }
+	            });
+	 
+	            // 可选：重置边框颜色，当用户开始在输入字段中键入时
+	            $('.login-box input[type="text"], .login-box input[type="password"]').on('input', function() {
+	                $(this).css('border-color', ''); // 当用户开始输入时，重置边框颜色
+	            });
+	 
+	            // 修正拼写错误：将Code输入字段的type属性从tpye更改为type
+	            $('.login-box .item:last-child .input input').attr('type', 'text');
+	        });
+	    </script>
+</html>

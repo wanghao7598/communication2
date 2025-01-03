@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Points Details</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- 请勿在项目正式环境中引用该 layui.css 地址 -->
+		<link href="https://unpkg.com/layui@2.9.21-rc.1/dist/css/layui.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	</head>
+	<body>
+		<div class="two-box">
+			<div class="header">
+				<img src="./img/titlefh.png">
+				Points Details
+			</div>
+			<div class="PointsDetails">
+				<div class="infobox">
+					<div class="tx"><img src="./img/img2/tx2.png"></div>
+					<div class="info">
+						<div class="number">188****0000</div>
+						<div class="Current">Beijing</div>
+						<div class="Current">Current points:689</div>
+					</div>
+				</div>
+				<div class="databox">
+					<div class="data">
+						<div class="input">
+							<label>start：</label>
+							 <input type="text" class="layui-input" id="ID-laydate-demo-en" placeholder="yyyy-MM-dd">
+						</div>
+						<div class="input">
+							<label>start：</label>
+							 <input type="text" class="layui-input" id="ID-laydate-demo-en" placeholder="yyyy-MM-dd">
+						</div>
+					</div>
+					<div class="databtn">query</div>
+				</div>
+				<div class="Enjoybox">
+					<div class="Enjoy">
+						<div class="title"><img src="./img/img2/Enjoy.png">Enjoy service number<span>188****0000</span></div>
+						<ul>
+							<li><div class="ico"><img src="./img/img2/time.png"></div>2024-8-1   05:07:00</li>
+							<li><div class="ico"><img src="./img/img2/Points.png"></div>Number of Points<span>93</span></li>
+							<li><div class="ico"><img src="./img/img2/dn.png"></div>Operation type: Points transfer and gift transfer</li>
+							<li><div class="ico"><img src="./img/img2/Bonus.png"></div>Points type<span>Bonus Points</span></li>
+						</ul>
+					</div>
+					<div class="Enjoy">
+						<div class="title"><img src="./img/img2/Enjoy.png">Enjoy service number<span>188****0000</span></div>
+						<ul>
+							<li><div class="ico"><img src="./img/img2/time.png"></div>2024-8-1   05:07:00</li>
+							<li><div class="ico"><img src="./img/img2/Points.png"></div>Number of Points<span>93</span></li>
+							<li><div class="ico"><img src="./img/img2/dn.png"></div>Operation type: Points transfer and gift transfer</li>
+							<li><div class="ico"><img src="./img/img2/Bonus.png"></div>Points type<span>Bonus Points</span></li>
+						</ul>
+					</div>
+					<div class="Enjoy">
+						<div class="title"><img src="./img/img2/Enjoy.png">Enjoy service number<span>188****0000</span></div>
+						<ul>
+							<li><div class="ico"><img src="./img/img2/time.png"></div>2024-8-1   05:07:00</li>
+							<li><div class="ico"><img src="./img/img2/Points.png"></div>Number of Points<span>93</span></li>
+							<li><div class="ico"><img src="./img/img2/dn.png"></div>Operation type: Points transfer and gift transfer</li>
+							<li><div class="ico"><img src="./img/img2/Bonus.png"></div>Points type<span>Bonus Points</span></li>
+						</ul>
+					</div>
+					<div class="Enjoy">
+						<div class="title"><img src="./img/img2/Enjoy.png">Enjoy service number<span>188****0000</span></div>
+						<ul>
+							<li><div class="ico"><img src="./img/img2/time.png"></div>2024-8-1   05:07:00</li>
+							<li><div class="ico"><img src="./img/img2/Points.png"></div>Number of Points<span>93</span></li>
+							<li><div class="ico"><img src="./img/img2/dn.png"></div>Operation type: Points transfer and gift transfer</li>
+							<li><div class="ico"><img src="./img/img2/Bonus.png"></div>Points type<span>Bonus Points</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+	<script src="https://unpkg.com/layui@2.9.21-rc.1/dist/layui.js"></script> 
+	<script>
+	layui.use(function(){
+	  var laydate = layui.laydate;
+	  // 渲染
+	  laydate.render({
+		elem: '#ID-laydate-demo'
+	  });
+	  // 英文版
+	  laydate.render({
+		elem: '#ID-laydate-demo-en',
+		lang: 'en'
+	  });
+	});
+	</script>
+</html>

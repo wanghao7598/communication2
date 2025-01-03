@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Shopping Mall</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="css/Home.css" rel="stylesheet" type="text/css">
+		<link href="https://unpkg.com/layui@2.9.21-rc.1/dist/css/layui.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="Shopping-box">
+			<div class="header">
+				<div class="title">Shopping Mall</div>
+				<div class="search"><img src="img/searchico.png"><input type="text" placeholder="search"/></div>
+			</div>
+			<div class="layui-carousel" id="ID-carousel-demo-1">
+			  <div carousel-item>
+			    <div><img src="./img/Rectangle120.png"></div>
+			    <div><img src="./img/Rectangle121.png"></div>
+				<div><img src="./img/Rectangle120.png"></div>
+			  </div>
+			</div>
+			<div class="brandlist">
+				<div class="item">
+					<div class="brandimg"><img src="./img/SAMSUNG.png"></div>
+					<div class="brandtext">SAMSUNG</div>
+				</div>
+				<div class="item">
+					<div class="brandimg"><img src="./img/Apple.png"></div>
+					<div class="brandtext">Apple</div>
+				</div>
+				<div class="item">
+					<div class="brandimg"><img src="./img/Huawei.png"></div>
+					<div class="brandtext">Huawei</div>
+				</div>
+				<div class="item">
+					<div class="brandimg"><img src="./img/ONEPLUS.png"></div>
+					<div class="brandtext">ONEPLUS</div>
+				</div>
+				<div class="item">
+					<div class="brandimg"><img src="./img/Blackberry.png"></div>
+					<div class="brandtext">Blackberry</div>
+				</div>
+			</div>
+			<div class="Hot">Hot</div>
+			<div class="Hotlist">
+				<div class="card">
+					<div class="phoneimg"><img src="./img/GalaxyZFlip6.png"></div>
+					<div class="phonetext">Galaxy Z Flip6</div>
+				</div>
+				<div class="card">
+					<div class="phoneimg"><img src="./img/HuaweiP50.png"></div>
+					<div class="phonetext">Galaxy Z Flip6</div>
+				</div>
+				<div class="card">
+					<div class="phoneimg"><img src="./img/GalaxyZFlip62.png"></div>
+					<div class="phonetext">Galaxy Z Flip6</div>
+				</div>
+				<div class="card">
+					<div class="phoneimg"><img src="./img/HuaweiP502.png"></div>
+					<div class="phonetext">Galaxy Z Flip6</div>
+				</div>
+			</div>
+		</div>
+		<div class="tabber">
+			<main class="main">
+			    <nav class="nav" id="nav">
+			        <ul>
+			            <li>
+			                <button class="tab_button">
+			                    <span class="icon home">
+			                        <i class="display">
+			                           <!-- <img src="./img/tabber/home.png"> -->
+			                        </i>
+			                    </span>
+			                    <span class="name">Home</span>                      
+			                </button>
+			            </li>
+			            <li>
+			                <button class="tab_button">
+			                    <span class="icon Explore">
+			                        <i class="display">
+			                          <!-- <img src="./img/tabber/Explore.png">  -->                               
+			                        </i>
+			                    </span>
+			                    <span class="name">Explore</span>                     
+			                </button>
+			            </li>
+			            <li>
+			                <button class="tab_button">
+			                    <span class="icon Rights">
+			                        <i class="display">
+			                            <!-- <img src="./img/tabber/Rights.png"> -->
+			                        </i>
+			                    </span>
+			                    <span class="name">Rights</span>                      
+			                </button>
+			            </li>
+			            <li>
+			                <button class="tab_button active_tab_button">
+			                    <span class="icon Shopping">
+			                        <i class="display">
+			                            <!-- <img src="./img/tabber/Shopping.png"> -->
+			                        </i>
+			                    </span>
+			                    <span class="name">Shopping</span>                       
+			                </button>
+			            </li>
+			            <li>
+			                <button class="tab_button">
+			                    <span class="icon me">
+			                        <i class="display">
+										<!-- <img src="./img/tabber/me.png"> -->
+			                        </i>
+			                    </span>
+			                    <span class="name">Me</span>                
+			                </button>
+			            </li>
+			        </ul>
+			    </nav>
+			</main>
+		</div>
+	</body>
+	<style type="text/css">
+		html,body{
+			width: 100%;
+			height: 100%;
+			margin:0;
+			padding: 0;
+		}
+	</style>
+	<script src="js/Home.js"></script>
+	<!-- 请勿在项目正式环境中引用该 layui.js 地址 -->
+	<script src="https://unpkg.com/layui@2.9.21-rc.1/dist/layui.js"></script> 
+	<script>
+	layui.use(function(){
+	  var carousel = layui.carousel;
+	  // 渲染 - 常规轮播
+	  carousel.render({
+		elem: '#ID-carousel-demo-1',
+		width: 'auto'
+	  });
+	  
+	  // 渲染 - 设置时间间隔、动画类型、宽高度等属性
+	  carousel.render({
+		elem: '#ID-carousel-demo-2',
+		interval: 1800,
+		anim: 'fade',
+		width: 'auto',
+		height: '80px'
+	  });
+	});
+	</script>
+</html>
